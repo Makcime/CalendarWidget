@@ -8,6 +8,6 @@ Widgets for Google calendar events
 This project need an ICS parser
 https://github.com/johngrogg/ics-parser.git
 
-'''shell
+```shell
 # git clone https://github.com/johngrogg/ics-parser.git
-'''
+```

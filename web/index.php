@@ -8,10 +8,6 @@
  *
  */
 
-echo 'Deploying test';
-
-// include '../web/ics-parser/class.iCalReader.php';
-// require '/app/web/ics-parser/class.iCalReader.php';
 require '../vendor/johngrogg/ics-parser/class.iCalReader.php';
 
 // if file containing the url does not exist, use the sample ics file

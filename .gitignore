@@ -14,4 +14,4 @@ CakePHP 2
 
 web/ics-parser/*
 
-*cal.url
+composer.phar

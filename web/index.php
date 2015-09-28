@@ -10,14 +10,14 @@
 
 echo 'Deploying test';
 
-include '../ics-parser/class.iCalReader.php';
-// require '/app/web/ics-parser/class.iCalReader.php';
+// include '../ics-parser/class.iCalReader.php';
+require '/app/web/ics-parser/class.iCalReader.php';
 
 // if file containing the url does not exist, use the sample ics file
-if (file_exists('cal.url')) {
-    $url = file_get_contents('cal.url');
+if (file_exists('../web/cal.url')) {
+    $url = file_get_contents('../web/cal.url');
 }else{
-    $url = 'sample.ics' ;
+    $url = '../web/sample.ics' ;
     echo "<br />\n";
     echo "This is a demo from a sample file, please add a cal.url file with the link to your calendar" ;
     echo "<br />\n";

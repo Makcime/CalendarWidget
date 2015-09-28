@@ -52,6 +52,11 @@ foreach ($events as $event) {
     echo utf8_decode('CREATED: ' . @$event['CREATED'] . "<br />\n");
     echo utf8_decode('LAST-MODIFIED: ' . @$event['LAST-MODIFIED'] . "<br />\n");
     echo utf8_decode('DESCRIPTION: ' . @$event['DESCRIPTION'] . "<br />\n");
+    $img = @$event['DESCRIPTION'];
+    if (filter_var($img, FILTER_VALIDATE_URL)){
+        echo "<img src=", $img, " /><br />\n";
+    }
+
     echo utf8_decode('LOCATION: ' . @$event['LOCATION'] . "<br />\n");
     echo utf8_decode('SEQUENCE: ' . @$event['SEQUENCE'] . "<br />\n");
     echo utf8_decode('STATUS: ' . @$event['STATUS'] . "<br />\n");

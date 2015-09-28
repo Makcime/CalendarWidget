@@ -12,6 +12,6 @@ CakePHP 2
 /app/Config/database.php
 /vendors/*
 
-ics-parser/*
+web/ics-parser/*
 
 *cal.url

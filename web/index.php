@@ -8,6 +8,8 @@
  *
  */
 
+echo 'Deploying test';
+
 require 'ics-parser/class.iCalReader.php';
 
 // if file containing the url does not exist, use the sample ics file
